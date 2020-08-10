@@ -1,0 +1,19 @@
+{
+	"poster": "Ringo",
+	"posterIconUrl": "https://via.placeholder.com/150",
+	"title": "This is a test post stop asking questions",
+	"body": "Do i need to say more?",
+	"comments": [{
+			"poster": "Rufus",
+			"body": "Yea that's cool i guess"
+		},
+		{
+			"poster": "Fingooo",
+			"body": "Why would you post a test post? //BANNED: ASKED TOO MANY QUESTIONS//"
+		},
+		{
+			"poster": "Blumbo",
+			"body": ">:V"
+		}
+	]
+}
