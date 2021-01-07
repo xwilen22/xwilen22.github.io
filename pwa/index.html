@@ -26,6 +26,14 @@
                 canvas.addEventListener("ontouchstart", (event) => {
                     if(event.target == canvas)
                         event.preventDefault()
+                    else
+                        return
+                    
+                    const touchX = event.touches[0].clientX, touchY = event.touches[0].clientY
+
+                    ctx.beginPath();
+                    ctx.arc(touchX, touchY, 50, 0, 2 * Math.PI);
+                    ctx.stroke(); 
                 })
             })
         }
