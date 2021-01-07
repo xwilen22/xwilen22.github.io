@@ -23,20 +23,22 @@
                 const canvas = document.getElementById("touch-canvas")
                 const context = canvas.getContext("2d")
                 
-                context.fillStyle = "blue";
+                context.fillStyle = "blue"
                 context.fillRect(0, 0, canvas.width, canvas.height);
                 context.fill()
 
-                canvas.addEventListener("ontouchstart", (event) => {
+                canvas.addEventListener("touchstart", (event) => {
+                    console.log("touched")
                     if(event.target == canvas)
                         event.preventDefault()
                     else
                         return
                     
-                    const touchX = event.touches[0].clientX, touchY = event.touches[0].clientY
+                    const touchX = event.touches[0].clientX - canvas.getBoundingClientRect().x, touchY = event.touches[0].clientY - canvas.getBoundingClientRect().y
 
                     context.beginPath();
-                    context.arc(touchX, touchY, 50, 0, 2 * Math.PI);
+                    context.strokeStyle = "green"
+                    context.arc(touchX, touchY, 20, 0, 2 * Math.PI);
                     context.stroke(); 
                 })
             })
