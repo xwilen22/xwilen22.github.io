@@ -23,6 +23,10 @@
                 const canvas = document.getElementById("touch-canvas")
                 const context = canvas.getContext("2d")
                 
+                context.fillStyle = "blue";
+                context.fillRect(0, 0, canvas.width, canvas.height);
+                context.fill()
+
                 canvas.addEventListener("ontouchstart", (event) => {
                     if(event.target == canvas)
                         event.preventDefault()
@@ -31,9 +35,9 @@
                     
                     const touchX = event.touches[0].clientX, touchY = event.touches[0].clientY
 
-                    ctx.beginPath();
-                    ctx.arc(touchX, touchY, 50, 0, 2 * Math.PI);
-                    ctx.stroke(); 
+                    context.beginPath();
+                    context.arc(touchX, touchY, 50, 0, 2 * Math.PI);
+                    context.stroke(); 
                 })
             })
         }
