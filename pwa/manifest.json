@@ -4,7 +4,7 @@
     "start_url": "https://xwilen22.github.io/pwa/index.html",
     "display": "standalone",
     "background_color": "#fff",
-    "theme_color": "green",
+    "theme_color": "#743bc4",
     "description": "Doormat progressive web application",
     "icons": [{
       "src": "./icons/48.png",
