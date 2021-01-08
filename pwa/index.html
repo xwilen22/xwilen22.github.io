@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#743bc4">
-    <title>PEEWEEAAH</title>
+    <title>PWA - Title header</title>
 
+    <link rel="icon" href="icons/48.png" type="image/gif" sizes="16x16"> 
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -22,6 +23,7 @@
                 initializeCanvas()
 
                 const hourOfDay = new Date().getHours()
+                
                 let timeOfDayText = "morning"
                 if (hourOfDay < 12) {
                     timeOfDayText = "morning"
